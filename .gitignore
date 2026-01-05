@@ -1,0 +1,49 @@
+# === Python / Environment ===
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+bin/
+lib/
+include/
+
+# === Sensitive Information ===
+# Never push your actual keys or credentials
+.env
+standalone_admin_password.txt
+
+# === Local Data ===
+# Ignore all CSV/data files, but keep the folder structure
+# (Requires a .gitkeep file in the folders to track the directories)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# === Airflow specific ===
+logs/
+airflow-webserver.pid
+*.db
+*.log
+
+# === Docker ===
+.docker/
+
+# === OS and IDE Junk ===
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo

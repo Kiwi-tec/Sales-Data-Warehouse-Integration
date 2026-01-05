@@ -1,0 +1,6 @@
+apache-airflow-providers-amazon
+pandas
+boto3
+psycopg2-binary
+python-dotenv
+pg8000
