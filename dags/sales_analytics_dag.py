@@ -83,7 +83,6 @@ with DAG(
             reader = csv.reader(f)
             next(reader) 
             for row in reader:
-                # Target 'date' and 'quantity' (now a DECIMAL)
                 cur.execute(
                     "INSERT INTO public.sales (product, quantity, price, date, revenue) VALUES (%s, %s, %s, %s, %s)",
                     (row[0], row[1], row[2], row[3], row[4])
