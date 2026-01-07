@@ -7,7 +7,6 @@ load_dotenv()
 def upload_to_s3(local_folder):
     """
     Moves local files to the Cloud. 
-    This represents the 'Extraction' phase of ETL.
     """
     bucket_name = os.getenv('S3_BUCKET_NAME')
     s3 = boto3.client(
