@@ -63,7 +63,7 @@ def clean_sales_data(df):
     # Remove duplicates
     clean = clean.drop_duplicates(subset=essential)
 
-    # 5. Feature Engineering
+   # 5. Calculating revenue
     if {'quantity', 'price'}.issubset(clean.columns):
         clean['revenue'] = clean['quantity'] * clean['price']
 
